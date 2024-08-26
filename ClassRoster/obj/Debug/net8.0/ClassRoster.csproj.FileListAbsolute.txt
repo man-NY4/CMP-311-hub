@@ -1,0 +1,15 @@
+C:\CMP-311\ClassRoster\bin\Debug\net8.0\ClassRoster.exe
+C:\CMP-311\ClassRoster\bin\Debug\net8.0\ClassRoster.deps.json
+C:\CMP-311\ClassRoster\bin\Debug\net8.0\ClassRoster.runtimeconfig.json
+C:\CMP-311\ClassRoster\bin\Debug\net8.0\ClassRoster.dll
+C:\CMP-311\ClassRoster\bin\Debug\net8.0\ClassRoster.pdb
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ClassRoster.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ClassRoster.AssemblyInfoInputs.cache
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ClassRoster.AssemblyInfo.cs
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ClassRoster.csproj.CoreCompileInputs.cache
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ClassRoster.sourcelink.json
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ClassRoster.dll
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\refint\ClassRoster.dll
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ClassRoster.pdb
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ClassRoster.genruntimeconfig.cache
+C:\CMP-311\ClassRoster\obj\Debug\net8.0\ref\ClassRoster.dll
