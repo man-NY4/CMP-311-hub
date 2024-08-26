@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ClassRoster
+namespace ClassRoster // program
 {
     class Program
     {
