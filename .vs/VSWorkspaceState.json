@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Calc"
+    "\\CalcRefactored"
   ],
-  "SelectedNode": "\\Calc\\Program.cs",
+  "SelectedNode": "\\CalcRefactored\\CalcRefactored.sln",
   "PreviewInSolutionExplorer": false
 }

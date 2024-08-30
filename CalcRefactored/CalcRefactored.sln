@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcRefactored", "CalcRefactored.csproj", "{8C95265B-E512-482C-B2C4-D4B579552FED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C95265B-E512-482C-B2C4-D4B579552FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C95265B-E512-482C-B2C4-D4B579552FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C95265B-E512-482C-B2C4-D4B579552FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C95265B-E512-482C-B2C4-D4B579552FED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2B7515B-0F52-4CA9-921D-46C54882DC96}
+	EndGlobalSection
+EndGlobal

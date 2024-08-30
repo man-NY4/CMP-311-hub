@@ -1,0 +1,15 @@
+C:\CMP-311\CalcRefactored\bin\Debug\net8.0\CalcRefactored.exe
+C:\CMP-311\CalcRefactored\bin\Debug\net8.0\CalcRefactored.deps.json
+C:\CMP-311\CalcRefactored\bin\Debug\net8.0\CalcRefactored.runtimeconfig.json
+C:\CMP-311\CalcRefactored\bin\Debug\net8.0\CalcRefactored.dll
+C:\CMP-311\CalcRefactored\bin\Debug\net8.0\CalcRefactored.pdb
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\CalcRefactored.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\CalcRefactored.AssemblyInfoInputs.cache
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\CalcRefactored.AssemblyInfo.cs
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\CalcRefactored.csproj.CoreCompileInputs.cache
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\CalcRefactored.sourcelink.json
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\CalcRefactored.dll
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\refint\CalcRefactored.dll
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\CalcRefactored.pdb
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\CalcRefactored.genruntimeconfig.cache
+C:\CMP-311\CalcRefactored\obj\Debug\net8.0\ref\CalcRefactored.dll

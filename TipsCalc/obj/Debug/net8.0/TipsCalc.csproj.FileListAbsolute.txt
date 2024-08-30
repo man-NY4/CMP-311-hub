@@ -1,0 +1,15 @@
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\TipsCalc.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\TipsCalc.AssemblyInfoInputs.cache
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\TipsCalc.AssemblyInfo.cs
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\TipsCalc.csproj.CoreCompileInputs.cache
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\TipsCalc.sourcelink.json
+C:\CMP-311\TipsCalc\bin\Debug\net8.0\TipsCalc.exe
+C:\CMP-311\TipsCalc\bin\Debug\net8.0\TipsCalc.deps.json
+C:\CMP-311\TipsCalc\bin\Debug\net8.0\TipsCalc.runtimeconfig.json
+C:\CMP-311\TipsCalc\bin\Debug\net8.0\TipsCalc.dll
+C:\CMP-311\TipsCalc\bin\Debug\net8.0\TipsCalc.pdb
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\TipsCalc.dll
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\refint\TipsCalc.dll
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\TipsCalc.pdb
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\TipsCalc.genruntimeconfig.cache
+C:\CMP-311\TipsCalc\obj\Debug\net8.0\ref\TipsCalc.dll
