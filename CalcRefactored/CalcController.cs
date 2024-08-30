@@ -7,14 +7,14 @@ namespace CalcRefactored
 {
     class CalcController
     {
-        CalcModel model = new CalcModel();
-        CalcView view = new CalcView();
+        CalcModel model = new CalcModel(); // initzialize to use methods
+        CalcView view = new CalcView(); // initzialize to use methods
         
         bool endApp = false;
 
         public CalcController()
         {
-            while (!endApp)
+            while (!endApp) // start of program
             {
                 // Display title as the C# console calculator app.
                 view.printString("Console Calculator in C#\n");
@@ -38,7 +38,7 @@ namespace CalcRefactored
                     numInput1 = view.getChar();
                     
                 }
-                model.Number1 = Convert.ToDouble(numInput1);
+                model.Number1 = Convert.ToDouble(numInput1); // change the model number to the input
 
 
                 // Ask the user to type the second number.
@@ -52,7 +52,7 @@ namespace CalcRefactored
                     view.printString("This is not valid input. Please enter a numeric value: ");
                     numInput2 = view.getChar();
                 }
-                model.Number2 = Convert.ToDouble(numInput2);
+                model.Number2 = Convert.ToDouble(numInput2); // change the model number to the input
 
 
                 view.printOptions(); // prints options

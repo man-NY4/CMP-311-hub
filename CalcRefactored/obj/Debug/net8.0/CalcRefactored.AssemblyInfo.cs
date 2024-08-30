@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalcRefactored")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dd2565ffbc9aba35784f7f0a56bed0952df0b2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1606cb2fb1dc73fd2b60439045ac0d8f9d32e9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalcRefactored")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalcRefactored")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
