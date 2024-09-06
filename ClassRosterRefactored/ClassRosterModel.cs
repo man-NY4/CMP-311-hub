@@ -30,12 +30,12 @@ namespace ClasRosterRefactored
 			studentRoster.Add(student);
 		}
 
-		public Instructor getInstructor()
+		public Instructor getInstructor() // get instructor
 		{
 			return instructor;
-		}
+		} 
 
-		public List<Student> getStudents()
+		public List<Student> getStudents() // get student roster
 		{
 			return studentRoster;
 		}
