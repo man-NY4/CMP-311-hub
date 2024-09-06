@@ -1,0 +1,15 @@
+C:\CMP-311\ClassRosterRefactored\bin\Debug\net8.0\ClassRosterRefactored.exe
+C:\CMP-311\ClassRosterRefactored\bin\Debug\net8.0\ClassRosterRefactored.deps.json
+C:\CMP-311\ClassRosterRefactored\bin\Debug\net8.0\ClassRosterRefactored.runtimeconfig.json
+C:\CMP-311\ClassRosterRefactored\bin\Debug\net8.0\ClassRosterRefactored.dll
+C:\CMP-311\ClassRosterRefactored\bin\Debug\net8.0\ClassRosterRefactored.pdb
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ClassRosterRefactored.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ClassRosterRefactored.AssemblyInfoInputs.cache
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ClassRosterRefactored.AssemblyInfo.cs
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ClassRosterRefactored.csproj.CoreCompileInputs.cache
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ClassRosterRefactored.sourcelink.json
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ClassRosterRefactored.dll
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\refint\ClassRosterRefactored.dll
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ClassRosterRefactored.pdb
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ClassRosterRefactored.genruntimeconfig.cache
+C:\CMP-311\ClassRosterRefactored\obj\Debug\net8.0\ref\ClassRosterRefactored.dll
