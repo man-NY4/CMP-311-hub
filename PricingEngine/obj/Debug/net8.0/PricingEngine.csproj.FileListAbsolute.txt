@@ -1,0 +1,15 @@
+C:\CMP-311\PricingEngine\bin\Debug\net8.0\PricingEngine.exe
+C:\CMP-311\PricingEngine\bin\Debug\net8.0\PricingEngine.deps.json
+C:\CMP-311\PricingEngine\bin\Debug\net8.0\PricingEngine.runtimeconfig.json
+C:\CMP-311\PricingEngine\bin\Debug\net8.0\PricingEngine.dll
+C:\CMP-311\PricingEngine\bin\Debug\net8.0\PricingEngine.pdb
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\PricingEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\PricingEngine.AssemblyInfoInputs.cache
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\PricingEngine.AssemblyInfo.cs
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\PricingEngine.csproj.CoreCompileInputs.cache
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\PricingEngine.sourcelink.json
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\PricingEngine.dll
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\refint\PricingEngine.dll
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\PricingEngine.pdb
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\PricingEngine.genruntimeconfig.cache
+C:\CMP-311\PricingEngine\obj\Debug\net8.0\ref\PricingEngine.dll
