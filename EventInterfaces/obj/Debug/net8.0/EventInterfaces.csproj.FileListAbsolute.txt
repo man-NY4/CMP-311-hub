@@ -1,0 +1,15 @@
+C:\CMP-311\EventInterfaces\bin\Debug\net8.0\EventInterfaces.exe
+C:\CMP-311\EventInterfaces\bin\Debug\net8.0\EventInterfaces.deps.json
+C:\CMP-311\EventInterfaces\bin\Debug\net8.0\EventInterfaces.runtimeconfig.json
+C:\CMP-311\EventInterfaces\bin\Debug\net8.0\EventInterfaces.dll
+C:\CMP-311\EventInterfaces\bin\Debug\net8.0\EventInterfaces.pdb
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\EventInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\EventInterfaces.AssemblyInfoInputs.cache
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\EventInterfaces.AssemblyInfo.cs
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\EventInterfaces.csproj.CoreCompileInputs.cache
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\EventInterfaces.sourcelink.json
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\EventInterfaces.dll
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\refint\EventInterfaces.dll
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\EventInterfaces.pdb
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\EventInterfaces.genruntimeconfig.cache
+C:\CMP-311\EventInterfaces\obj\Debug\net8.0\ref\EventInterfaces.dll
