@@ -1,0 +1,15 @@
+C:\CMP-311\ProgressiveExample\bin\Debug\net8.0\ProgressiveExample.exe
+C:\CMP-311\ProgressiveExample\bin\Debug\net8.0\ProgressiveExample.deps.json
+C:\CMP-311\ProgressiveExample\bin\Debug\net8.0\ProgressiveExample.runtimeconfig.json
+C:\CMP-311\ProgressiveExample\bin\Debug\net8.0\ProgressiveExample.dll
+C:\CMP-311\ProgressiveExample\bin\Debug\net8.0\ProgressiveExample.pdb
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ProgressiveExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ProgressiveExample.AssemblyInfoInputs.cache
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ProgressiveExample.AssemblyInfo.cs
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ProgressiveExample.csproj.CoreCompileInputs.cache
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ProgressiveExample.sourcelink.json
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ProgressiveExample.dll
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\refint\ProgressiveExample.dll
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ProgressiveExample.pdb
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ProgressiveExample.genruntimeconfig.cache
+C:\CMP-311\ProgressiveExample\obj\Debug\net8.0\ref\ProgressiveExample.dll

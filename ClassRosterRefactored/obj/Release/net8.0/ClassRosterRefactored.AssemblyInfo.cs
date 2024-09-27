@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassRosterRefactored")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0351720d57050433f6932a8b81dbf22be125826e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eba2d6192e6a241f64506e5f1d8ed06ed1441aeb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassRosterRefactored")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassRosterRefactored")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

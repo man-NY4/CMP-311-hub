@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PricingEngineTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+850b92d0def98131fa88481ba29195c766ecca70")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eba2d6192e6a241f64506e5f1d8ed06ed1441aeb")]
 [assembly: System.Reflection.AssemblyProductAttribute("PricingEngineTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PricingEngineTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

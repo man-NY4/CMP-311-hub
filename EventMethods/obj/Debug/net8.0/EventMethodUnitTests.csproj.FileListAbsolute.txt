@@ -1,0 +1,15 @@
+C:\CMP-311\EventMethodUnitTests\bin\Debug\net8.0\EventMethodUnitTests.exe
+C:\CMP-311\EventMethodUnitTests\bin\Debug\net8.0\EventMethodUnitTests.deps.json
+C:\CMP-311\EventMethodUnitTests\bin\Debug\net8.0\EventMethodUnitTests.runtimeconfig.json
+C:\CMP-311\EventMethodUnitTests\bin\Debug\net8.0\EventMethodUnitTests.dll
+C:\CMP-311\EventMethodUnitTests\bin\Debug\net8.0\EventMethodUnitTests.pdb
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\EventMethodUnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\EventMethodUnitTests.AssemblyInfoInputs.cache
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\EventMethodUnitTests.AssemblyInfo.cs
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\EventMethodUnitTests.csproj.CoreCompileInputs.cache
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\EventMethodUnitTests.sourcelink.json
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\EventMethodUnitTests.dll
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\refint\EventMethodUnitTests.dll
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\EventMethodUnitTests.pdb
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\EventMethodUnitTests.genruntimeconfig.cache
+C:\CMP-311\EventMethodUnitTests\obj\Debug\net8.0\ref\EventMethodUnitTests.dll
