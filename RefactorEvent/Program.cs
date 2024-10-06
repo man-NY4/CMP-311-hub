@@ -14,7 +14,7 @@ namespace RefactorEvent
             OnlineTourney online = new OnlineTourney(8021, "Online Frontier", 16);
             ITournament tournament2 = online;
             TournamentService tournamentService2 = new TournamentService(tournament2);
-            tournamentService1.printTournament("Inside Online tournament");
+            tournamentService2.printTournament("Inside Online tournament");
 
 
             /*
