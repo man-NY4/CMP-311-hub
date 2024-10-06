@@ -6,6 +6,18 @@ namespace RefactorEvent
     {
         static void Main(string[] args)
         {
+            OfflineTourney offline = new OfflineTourney(4032, "Gaming United", 16);
+            ITournament tournament = offline;
+            TournamentService tournamentService1 = new TournamentService(tournament);
+            tournamentService1.printTournament("Inside Offline tournament\n");
+
+            OnlineTourney online = new OnlineTourney(8021, "Online Frontier", 16);
+            ITournament tournament2 = online;
+            TournamentService tournamentService2 = new TournamentService(tournament2);
+            tournamentService1.printTournament("Inside Online tournament");
+
+
+            /*
             Console.WriteLine("Make a Tournament");
             Console.WriteLine("---------------------------------------\n");
             Console.WriteLine("Enter the # of players for an offline single elimination tournament");
@@ -56,6 +68,7 @@ namespace RefactorEvent
             Console.WriteLine(tournament);
             Console.WriteLine(online);
             Console.WriteLine("---------------------------------------\n"); 
+            */
         }
     }
 }

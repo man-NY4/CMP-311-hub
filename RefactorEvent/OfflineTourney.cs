@@ -2,13 +2,24 @@
 
 namespace RefactorEvent
 {
-    public class Tournament : INumberOfPlayers, INumberOfGames, ITotalFees, IVersusType // tournament class
+    public class OfflineTourney : ITournament, INumberOfPlayers, INumberOfGames, ITotalFees, IVersusType // offlineTourney class
     {
         private TournamentInfo theTournament; // initialize tournament info
 
-        public Tournament(int newId, string newTournamentName, int newPlayers)
+        public OfflineTourney(int newId, string newTournamentName, int newPlayers)
         {
             theTournament = new TournamentInfo(newId, newTournamentName, newPlayers);
+        }
+
+        void ITournament.printTournament(string message) // implement interface tournament method
+        {
+            Console.WriteLine("This is an offline tournament.");
+            OfflineMessage(message);
+        }
+
+        private void OfflineMessage(string message) // specific method when service is used
+        {
+            Console.Write(message);
         }
 
         void INumberOfPlayers.printPlayers() // implement interface player method

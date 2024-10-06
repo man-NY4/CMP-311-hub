@@ -4,19 +4,19 @@ namespace RefactorEvent
 {
     public class TournamentService
     {
-        private readonly INumberOfPlayers _players;
-        private readonly INumberOfGames _games;
-        private readonly ITotalFees _totalFees;
-        private readonly IVersusType _versusType;
+        private readonly ITournament _tournament;
 
-        public TournamentService(INumberOfPlayers players, INumberOfGames games, ITotalFees totalFees, IVersusType versusType)
+        public TournamentService(ITournament tournament)
         {
-            _players = players;
-            _games = games;
-            _totalFees = totalFees;
-            _versusType = versusType;
+            _tournament = tournament;
         }
 
+        public void printTournament(string message)
+        {
+            _tournament.printTournament(message);
+        }
+
+        /*
         public void printPlayers()
         {
             _players.printPlayers();
@@ -27,14 +27,15 @@ namespace RefactorEvent
             _games.printGames();
         }
 
-        public void playerCost(string totalFees)
+        public void playerCost(string tournament)
         {
-            _totalFees.playerCost(totalFees);
+            _totalFees.playerCost(tournament);
         } 
 
-        public void printVersusType(string versusType)
+        public void printVersusType(string tournament)
         {
-            _versusType.printVersusType(versusType);
+            _versusType.printVersusType(tournament);
         }
+        */
     }
 }
