@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RefactorEvent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5f564de78504bff584ee83c9d5d509471510fbf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53b1cc0cc55eff642e02d67efdc89ea14c936dc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("RefactorEvent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RefactorEvent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

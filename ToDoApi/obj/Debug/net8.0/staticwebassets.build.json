@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "7X3GtNtq47FLUYWZ5QbvPsfV87PExYhMUWiXt8saQc4=",
+  "Source": "ToDoApi",
+  "BasePath": "_content/ToDoApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ToDoApi\\wwwroot",
+      "Source": "ToDoApi",
+      "ContentRoot": "C:\\CMP-311\\ToDoApi\\wwwroot\\",
+      "BasePath": "_content/ToDoApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\CMP-311\\ToDoApi\\wwwroot\\css\\site.css",
+      "SourceId": "ToDoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CMP-311\\ToDoApi\\wwwroot\\",
+      "BasePath": "_content/ToDoApi",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\CMP-311\\ToDoApi\\wwwroot\\index.html",
+      "SourceId": "ToDoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CMP-311\\ToDoApi\\wwwroot\\",
+      "BasePath": "_content/ToDoApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\CMP-311\\ToDoApi\\wwwroot\\js\\site.js",
+      "SourceId": "ToDoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CMP-311\\ToDoApi\\wwwroot\\",
+      "BasePath": "_content/ToDoApi",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}
