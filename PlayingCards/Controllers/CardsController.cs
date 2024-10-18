@@ -52,7 +52,6 @@ namespace PlayingCards.Controllers
                 return NotFound();
             }
 
-            //_context.Entry(card).State = EntityState.Modified;
             card.CardRank = cardDTO.CardRank;
             card.CardSuit = cardDTO.CardSuit;
             card.InDeck = cardDTO.InDeck;
