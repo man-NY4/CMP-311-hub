@@ -4,9 +4,9 @@ const app = express();
 app.use(express.json());
 
 const chessPieces = [
-    { id: 1, name: ' the 1'},
-    { id: 2, name: ' the 2'},
-    { id: 3, name: ' the 3'},
+    { id: 1, name: 'pawn', color: 'white', placeOnBoard: 'e2 '},
+    { id: 2, name: 'rook', color: 'black', placeOnBoard: 'a8'},
+    { id: 3, name: 'bishop', color: 'black', placeOnBoard: 'c8'},
 ]
 
 app.get('/api/chess', (req, res) => {
@@ -23,13 +23,15 @@ app.get('/api/chess/:id', (req, res) => {
 });
 
 app.post('/api/chess',(req, res) => {
-    if (!req.body.name || req.body.name.length < 3) {
-        return res.status(400).send('Minimum 3 characters');
+    if (!req.body.name || req.body.name.length < 2 || !req.body.color || req.body.color.length < 2 || !req.body.placeOnBoard) {
+        return res.status(400).send('Minimum 2 characters');
     }
     
     const chessPiece = {
         id: chessPieces.length + 1,
-        name: req.body.name
+        name: req.body.name,
+        color: req.body.color,
+        placeOnBoard: req.body.placeOnBoard
     };
     chessPieces.push(chessPiece);
     res.send(chessPiece);
@@ -41,11 +43,13 @@ app.put('/api/chess/:id',(req, res) => {
         return res.status(404).send('Not found');
     }
 
-    if (!req.body.name || req.body.name.length < 3) {
-        return res.status(400).send('Minimum 3 characters');
+    if (!req.body.name || req.body.name.length < 2 || !req.body.color || req.body.color.length < 2 || !req.body.placeOnBoard) {
+        return res.status(400).send('Minimum 2 characters');
     }
 
     chessPiece.name = req.body.name;
+    chessPiece.color = req.body.color;
+    chessPiece.placeOnBoard = req.body.placeOnBoard;
     res.send(chessPiece);
 });
 
