@@ -70,9 +70,11 @@ app.post('/api/customers',(req, res) => {
 
     
     con.connect(function(err) {
+        customerName = req.body.name
+        customerAddress = req.body.address
         if (err) throw err;
         console.log("Connected!");
-        var sql = "INSERT INTO customers (name, address) VALUES (test, test)";
+        var sql = "INSERT INTO customers (name, address) VALUES ('"+ customerName + "', '"+customerAddress+"') ";
         con.query(sql, function (err, result) {
           if (err) throw err;
           else{
@@ -83,32 +85,6 @@ app.post('/api/customers',(req, res) => {
         });
     });
 
-});
-
-app.put('/api/customers/:id',(req, res) => {
-    const customer =customers.find(c => c.id === parseInt(req.params.id));
-    if (!customer) {
-        return res.status(404).send('Not found');
-    }
-
-    if (!req.body.name || req.body.name.length < 3) {
-        return res.status(400).send('Minimum 3 characters');
-    }
-
-    customer.name = req.body.name;
-    res.send(customer);
-});
-
-app.delete('/api/customers/:id',(req, res) => {
-    const customer =customers.find(c => c.id === parseInt(req.params.id));
-    if (!customer){
-        return res.status(404).send('Not found');
-    } 
-
-    const index = customers.indexOf(customer);
-    customers.splice(index, 1);
-
-    res.send(customer);
 });
 
 const port = process.env.PORT || 3000;
