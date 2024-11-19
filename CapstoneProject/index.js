@@ -28,7 +28,7 @@ app.get('/api/customers', (req, res) => {
 
     con.connect(function(err) {
         if (err) throw err;
-        con.query("SELECT * FROM customers", function (err, result) {
+        con.query("SELECT * FROM students", function (err, result) {
           if (err) throw err;
           else{
             console.log(result);
@@ -48,7 +48,7 @@ app.get('/api/customers/:id', (req, res) => {
 
     con.connect(function(err) {
         if (err) throw err;
-        con.query("SELECT * FROM customers WHERE id = " + parseInt(req.params.id), 
+        con.query("SELECT * FROM students WHERE id = " + parseInt(req.params.id), 
         function (err, result) {
           if (err) throw err;
           else {
@@ -70,11 +70,12 @@ app.post('/api/customers',(req, res) => {
 
     
     con.connect(function(err) {
-        customerName = req.body.name
-        customerAddress = req.body.address
+        studentLast = req.body.lastName
+        studentFirst = req.body.firstName
+        studentEmail = req.body.email
         if (err) throw err;
         console.log("Connected!");
-        var sql = "INSERT INTO customers (name, address) VALUES ('"+ customerName + "', '"+customerAddress+"') ";
+        var sql = "INSERT INTO students (name, address) VALUES ('"+ studentLast + "', '"+ studentFirst +"', '"+ studentEmail +"') ";
         con.query(sql, function (err, result) {
           if (err) throw err;
           else{
@@ -86,6 +87,18 @@ app.post('/api/customers',(req, res) => {
     });
 
 });
+
+app.put('/api/customers',(req, res) => {
+    let con = mysql.createConnection({
+        host: "localhost",
+        user: "emmanuel_medina",
+        password: "Frog2570739707!",
+        database: "mydb"
+    });
+
+
+});
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
