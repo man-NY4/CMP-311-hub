@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.send('Connected to the database');
 });
 
-app.get('/api/customers', (req, res) => {
+app.get('/api/capstone', (req, res) => {
     let con = mysql.createConnection({
         host: "localhost",
         user: "emmanuel_medina",
@@ -38,7 +38,7 @@ app.get('/api/customers', (req, res) => {
     });
 });
 
-app.get('/api/customers/:id', (req, res) => {
+app.get('/api/capstone/:id', (req, res) => {
     let con = mysql.createConnection({
         host: "localhost",
         user: "emmanuel_medina",
@@ -60,7 +60,7 @@ app.get('/api/customers/:id', (req, res) => {
     });   
 });
 
-app.post('/api/customers',(req, res) => {
+app.post('/api/capstone',(req, res) => {
     let con = mysql.createConnection({
         host: "localhost",
         user: "emmanuel_medina",
@@ -75,12 +75,13 @@ app.post('/api/customers',(req, res) => {
         studentEmail = req.body.email
         if (err) throw err;
         console.log("Connected!");
-        var sql = "INSERT INTO students (name, address) VALUES ('"+ studentLast + "', '"+ studentFirst +"', '"+ studentEmail +"') ";
+        var sql = "INSERT INTO students (lastName, firstName, email) VALUES ('"+ studentLast + "', '"+ studentFirst +"', '"+ studentEmail +"') ";
         con.query(sql, function (err, result) {
           if (err) throw err;
           else{
             console.log("1 record inserted");
-            if (!req.body.name || req.body.name.length < 3) return res.status(400).send('Minimum 3 characters');
+            if (!req.body.lastName || req.body.lastName.length < 3 || !req.body.firstName || req.body.firstName.length < 3) 
+                return res.status(400).send('Minimum 3 characters');
                 res.send(result)
           }
         });
@@ -88,7 +89,7 @@ app.post('/api/customers',(req, res) => {
 
 });
 
-app.put('/api/customers',(req, res) => {
+app.put('/api/capstone',(req, res) => {
     let con = mysql.createConnection({
         host: "localhost",
         user: "emmanuel_medina",
