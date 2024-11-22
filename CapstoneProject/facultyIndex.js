@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
-var mysql = require('mysql2');
+const mysql = require('mysql2');
 
 app.get('/', (req, res) => {
     let con = mysql.createConnection({
@@ -70,12 +70,12 @@ app.post('/api/capstone',(req, res) => {
 
     
     con.connect(function(err) {
-        facultyLast = req.body.facultyLast
-        facultyFirst = req.body.facultyFirst
-        facultyEmail = req.body.facultyEmail
+        facultyLastName = req.body.facultyLast
+        facultyFirstName = req.body.facultyFirst
+        faculty_Email = req.body.facultyEmail
         if (err) throw err;
         console.log("Connected!");
-        var sql = "INSERT INTO faculty (facultyLast, facultyFirst, facultyEmail) VALUES ('"+ facultyLast + "', '"+ facultyFirst +"', '"+ facultyEmail +"') ";
+        var sql = "INSERT INTO faculty (facultyLast, facultyFirst, facultyEmail) VALUES ('"+ facultyLastName + "', '"+ facultyFirstName +"', '"+ faculty_Email +"') ";
         con.query(sql, function (err, result) {
           if (err) throw err;
           else{
@@ -98,13 +98,13 @@ app.put('/api/capstone/:id',(req, res) => {
     });
 
     con.connect(function(err) {
-        facultyLast = req.body.facultyLast
-        facultyFirst = req.body.facultyFirst
-        facultyEmail = req.body.facultyEmail
+        facultyLastName = req.body.facultyLast
+        facultyFirstName = req.body.facultyFirst
+        faculty_Email = req.body.facultyEmail
         if (err) throw err;
         console.log("Connected!");
         var sql = "UPDATE faculty SET facultyLast = ?, facultyFirst = ?, facultyEmail = ? WHERE id =" + parseInt(req.params.id);
-        con.query(sql, [facultyLast, facultyFirst, facultyEmail], function (err, result) {
+        con.query(sql, [facultyLastName, facultyFirstName, faculty_Email], function (err, result) {
           if (err) throw err;
           else{
             console.log("1 record updated");
@@ -137,7 +137,7 @@ app.delete('/api/capstone/:id',(req, res) => {
 
 });
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
     console.log(`Listening on port ${port}...`)
 });

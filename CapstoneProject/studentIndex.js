@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
-var mysql = require('mysql2');
+const mysql = require('mysql2');
 
 app.get('/', (req, res) => {
     let con = mysql.createConnection({
