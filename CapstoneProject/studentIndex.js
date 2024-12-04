@@ -80,7 +80,7 @@ app.post('/api/capstone',(req, res) => {
           if (err) throw err;
           else{
             console.log("1 record inserted");
-            if (!req.body.lastName || req.body.lastName.length < 3 || !req.body.firstName || req.body.firstName.length < 3) 
+            if (!studentLast || studentLast.length < 3 || !studentFirst.firstName || studentFirst.length < 3) 
                 return res.status(400).send('Minimum 3 characters');
                 res.send(result)
           }
@@ -108,7 +108,7 @@ app.put('/api/capstone/:id',(req, res) => {
           if (err) throw err;
           else{
             console.log("1 record updated");
-            if (!req.body.lastName || req.body.lastName.length < 3 || !req.body.firstName || req.body.firstName.length < 3) 
+            if (!studentLast || studentLast.length < 3 || !studentFirst || studentFirst.length < 3) 
                 return res.status(400).send('Minimum 3 characters');
                 res.send(result)
           }

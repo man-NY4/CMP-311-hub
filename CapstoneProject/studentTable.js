@@ -10,7 +10,7 @@ var con = mysql.createConnection({
 con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
-    var sql = "CREATE TABLE students (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, lastName VARCHAR(255), firstName VARCHAR(255), email VARCHAR(255))";
+    var sql = "CREATE TABLE students (id INT AUTO_INCREMENT PRIMARY KEY, lastName VARCHAR(255), firstName VARCHAR(255), email VARCHAR(255))";
     con.query(sql, function (err, result) {
       if (err) throw err;
       console.log("Table created");
