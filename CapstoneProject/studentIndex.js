@@ -101,16 +101,24 @@ app.put('/api/capstone/:id',(req, res) => {
         studentLast = req.body.lastName
         studentFirst = req.body.firstName
         studentEmail = req.body.email
+        studenetId = parseInt(req.params.id)
+
         if (err) throw err;
         console.log("Connected!");
-        var sql = "UPDATE students SET lastName = ?, firstName = ?, email = ? WHERE id =" + parseInt(req.params.id);
-        con.query(sql, [studentLast, studentFirst, studentEmail], function (err, result) {
+
+        if (isNaN(studenetId) || studenetId <= 0) {
+            return res.status(404).send('Id not found');
+        }
+
+        if (!studentLast || studentLast.length < 3 || !studentFirst || studentFirst.length < 3 || !studentEmail) 
+            return res.status(400).send('Minimum 3 characters');
+
+        var sql = "UPDATE students SET lastName = ?, firstName = ?, email = ? WHERE id = ?";
+        con.query(sql, [studentLast, studentFirst, studentEmail, studenetId], function (err, result) {
           if (err) throw err;
           else{
             console.log("1 record updated");
-            if (!studentLast || studentLast.length < 3 || !studentFirst || studentFirst.length < 3) 
-                return res.status(400).send('Minimum 3 characters');
-                res.send(result)
+            res.send(result)
           }
         });
     });
@@ -134,7 +142,6 @@ app.delete('/api/capstone/:id',(req, res) => {
           res.send(result)
         });
     });
-
 });
 
 const port = process.env.PORT || 3000;
