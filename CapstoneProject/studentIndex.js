@@ -109,21 +109,23 @@ app.put('/api/capstone/:id',(req, res) => {
         if (err) throw err;
         console.log("Connected!");
 
-        if (isNaN(studenetId) || studenetId <= 0)
-            return res.status(404).send('Id not found');
-
         if (!studentLast || studentLast.length < 3 || !studentFirst || studentFirst.length < 3 || !studentEmail) 
             return res.status(400).send('Minimum 3 characters');
 
         var sql = "UPDATE students SET lastName = ?, firstName = ?, email = ? WHERE id = ?";
         con.query(sql, [studentLast, studentFirst, studentEmail, studenetId], function (err, result) {
           if (err) throw err;
+
+          if(result.affectedRows === 0)
+            res.status(404).send("Id not found")
+
           else{
             console.log("1 record updated");
             res.send(result)
           }
         });
     });
+
 });
 
 
@@ -140,15 +142,17 @@ app.delete('/api/capstone/:id',(req, res) => {
 
         if (err) throw err;
 
-        if (isNaN(studenetId) || studenetId <= 0) {
-            return res.status(404).send('Id not found');
-        }
-
         var sql = "DELETE FROM students WHERE id = ?";
         con.query(sql, [studenetId], function (err, result) {
           if (err) throw err;
-          console.log("Number of records deleted: " + result.affectedRows);
-          res.send(result)
+
+          if(result.affectedRows === 0)
+            res.status(404).send("Id not found")
+        
+          else{
+            console.log("Number of records deleted: " + result.affectedRows);
+            res.send(result)
+          }
         });
     });
 });

@@ -108,9 +108,6 @@ app.put('/api/capstone/:id',(req, res) => {
 
         if (err) throw err;
         console.log("Connected!");
-        
-        if (isNaN(facultyId) || facultyId <= 0)
-            return res.status(404).send('Id not found');
 
         if (!facultyLastName || facultyLastName.length < 3 || !facultyFirstName || facultyFirstName.length < 3 || !faculty_Email) 
             return res.status(400).send('Minimum 3 characters');
@@ -118,6 +115,10 @@ app.put('/api/capstone/:id',(req, res) => {
         var sql = "UPDATE faculty SET facultyLast = ?, facultyFirst = ?, facultyEmail = ? WHERE id =" + parseInt(req.params.id);
         con.query(sql, [facultyLastName, facultyFirstName, faculty_Email], function (err, result) {
           if (err) throw err;
+
+          if(result.affectedRows === 0)
+            res.status(404).send("Id not found")
+
           else{
             console.log("1 record updated");
                 res.send(result)
@@ -146,8 +147,14 @@ app.delete('/api/capstone/:id',(req, res) => {
         var sql = "DELETE FROM faculty WHERE id =" + parseInt(req.params.id);
         con.query(sql, function (err, result) {
           if (err) throw err;
-          console.log("Number of records deleted: " + result.affectedRows);
-          res.send(result)
+
+          if(result.affectedRows === 0)
+            res.status(404).send("Id not found")
+        
+          else{
+            console.log("Number of records deleted: " + result.affectedRows);
+            res.send(result)
+          }
         });
     });
 
