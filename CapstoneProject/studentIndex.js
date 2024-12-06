@@ -80,8 +80,8 @@ app.post('/api/capstone',(req, res) => {
         if (!studentLast || studentLast.length < 3 || !studentFirst || studentFirst.length < 3 || !studentEmail) 
             return res.status(400).send('Minimum 3 characters');
 
-        var sql = "INSERT INTO students (lastName, firstName, email) VALUES ('"+ studentLast + "', '"+ studentFirst +"', '"+ studentEmail +"') ";
-        con.query(sql, function (err, result) {
+        var sql = "INSERT INTO students (lastName, firstName, email) VALUES (?, ?, ?)";
+        con.query(sql,[studentLast, studentFirst, studentEmail] , function (err, result) {
           if (err) throw err;
           else{
             console.log("1 record inserted");
