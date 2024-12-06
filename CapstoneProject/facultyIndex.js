@@ -73,15 +73,18 @@ app.post('/api/capstone',(req, res) => {
         facultyLastName = req.body.facultyLast
         facultyFirstName = req.body.facultyFirst
         faculty_Email = req.body.facultyEmail
+
         if (err) throw err;
         console.log("Connected!");
+
+        if (!facultyLastName || facultyLastName.length < 3 || !facultyFirstName || facultyFirstName.length < 3 || !faculty_Email) 
+            return res.status(400).send('Minimum 3 characters');
+
         var sql = "INSERT INTO faculty (facultyLast, facultyFirst, facultyEmail) VALUES ('"+ facultyLastName + "', '"+ facultyFirstName +"', '"+ faculty_Email +"') ";
         con.query(sql, function (err, result) {
           if (err) throw err;
           else{
             console.log("1 record inserted");
-            if (!req.body.facultyLast || req.body.facultyLast.length < 3 || !req.body.facultyFirst || req.body.facultyFirst.length < 3) 
-                return res.status(400).send('Minimum 3 characters');
                 res.send(result)
           }
         });
@@ -101,15 +104,22 @@ app.put('/api/capstone/:id',(req, res) => {
         facultyLastName = req.body.facultyLast
         facultyFirstName = req.body.facultyFirst
         faculty_Email = req.body.facultyEmail
+        facultyId = parseInt(req.params.id)
+
         if (err) throw err;
         console.log("Connected!");
+        
+        if (isNaN(facultyId) || facultyId <= 0)
+            return res.status(404).send('Id not found');
+
+        if (!facultyLastName || facultyLastName.length < 3 || !facultyFirstName || facultyFirstName.length < 3 || !faculty_Email) 
+            return res.status(400).send('Minimum 3 characters');
+        
         var sql = "UPDATE faculty SET facultyLast = ?, facultyFirst = ?, facultyEmail = ? WHERE id =" + parseInt(req.params.id);
         con.query(sql, [facultyLastName, facultyFirstName, faculty_Email], function (err, result) {
           if (err) throw err;
           else{
             console.log("1 record updated");
-            if (!req.body.facultyLast || req.body.facultyLast.length < 3 || !req.body.facultyFirst || req.body.facultyFirst.length < 3) 
-                return res.status(400).send('Minimum 3 characters');
                 res.send(result)
           }
         });
@@ -126,7 +136,13 @@ app.delete('/api/capstone/:id',(req, res) => {
     });
 
     con.connect(function(err) {
+        facultyId = parseInt(req.params.id)
+
         if (err) throw err;
+
+        if (isNaN(facultyId) || facultyId <= 0)
+            return res.status(404).send('Id not found');
+
         var sql = "DELETE FROM faculty WHERE id =" + parseInt(req.params.id);
         con.query(sql, function (err, result) {
           if (err) throw err;

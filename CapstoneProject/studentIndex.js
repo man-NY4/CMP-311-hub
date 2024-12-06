@@ -73,15 +73,18 @@ app.post('/api/capstone',(req, res) => {
         studentLast = req.body.lastName
         studentFirst = req.body.firstName
         studentEmail = req.body.email
+
         if (err) throw err;
         console.log("Connected!");
+
+        if (!studentLast || studentLast.length < 3 || !studentFirst || studentFirst.length < 3 || !studentEmail) 
+            return res.status(400).send('Minimum 3 characters');
+
         var sql = "INSERT INTO students (lastName, firstName, email) VALUES ('"+ studentLast + "', '"+ studentFirst +"', '"+ studentEmail +"') ";
         con.query(sql, function (err, result) {
           if (err) throw err;
           else{
             console.log("1 record inserted");
-            if (!studentLast || studentLast.length < 3 || !studentFirst.firstName || studentFirst.length < 3) 
-                return res.status(400).send('Minimum 3 characters');
                 res.send(result)
           }
         });
@@ -106,9 +109,8 @@ app.put('/api/capstone/:id',(req, res) => {
         if (err) throw err;
         console.log("Connected!");
 
-        if (isNaN(studenetId) || studenetId <= 0) {
+        if (isNaN(studenetId) || studenetId <= 0)
             return res.status(404).send('Id not found');
-        }
 
         if (!studentLast || studentLast.length < 3 || !studentFirst || studentFirst.length < 3 || !studentEmail) 
             return res.status(400).send('Minimum 3 characters');
@@ -134,9 +136,16 @@ app.delete('/api/capstone/:id',(req, res) => {
     });
 
     con.connect(function(err) {
+        studenetId = parseInt(req.params.id)
+
         if (err) throw err;
-        var sql = "DELETE FROM students WHERE id =" + parseInt(req.params.id);
-        con.query(sql, function (err, result) {
+
+        if (isNaN(studenetId) || studenetId <= 0) {
+            return res.status(404).send('Id not found');
+        }
+
+        var sql = "DELETE FROM students WHERE id = ?";
+        con.query(sql, [studenetId], function (err, result) {
           if (err) throw err;
           console.log("Number of records deleted: " + result.affectedRows);
           res.send(result)
